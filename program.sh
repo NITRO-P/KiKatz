@@ -129,7 +129,7 @@ git clone https://github.com/maldevel/IPGeoLocation
 cd IPGeoLocation
 pip3 install -r requirements.txt --user
 read -p "masukkan ip target: " ipgeo;
-./ipgeolocation -t $ipgeo
+./ipgeolocation.py -t $ipgeo
 else 
 echo "masukkan input yang benar!"
  fi
