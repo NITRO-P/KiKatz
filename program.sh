@@ -127,11 +127,13 @@ elif [ $lokasi = 4 ]; then
 echo "sedang mendownload GeoIPLocation"
 git clone https://github.com/maldevel/IPGeoLocation
 cd IPGeoLocation
+chmod +x *.py
 pip3 install -r requirements.txt --user
 read -p "masukkan ip target: " ipgeo;
 ./ipgeolocation.py -t $ipgeo
 else 
 echo "masukkan input yang benar!"
+ ./program.sh
  fi
 elif [ $pilihan == 6 ]; then
 chmod +x program2.sh
